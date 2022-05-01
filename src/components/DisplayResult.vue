@@ -1,6 +1,6 @@
 <template>
   <div class="display">
-    <span>0,00000000000000000</span>
+    <span>{{ label }}</span>
   </div>
 </template>
 
@@ -8,6 +8,12 @@
 export default {
   name: 'DisplayResult',
   components: {
+  },
+  props: {
+    label: {
+      type: String,
+      default: '0',
+    },
   }
 }
 </script>
