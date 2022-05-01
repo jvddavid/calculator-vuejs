@@ -1,5 +1,5 @@
 <template>
-  <button class="button" :class="{ double, triple, operation }">
+  <button class="button" :class="{ double, triple, operation }" @click="onClick">
     {{ label }}
   </button>
 </template>
@@ -19,6 +19,9 @@ export default {
     },
     triple: {
       type: Boolean,
+    },
+    onClick: {
+      type: Function,
     },
   }
 }
