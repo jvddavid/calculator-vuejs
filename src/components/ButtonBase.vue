@@ -1,5 +1,5 @@
 <template>
-  <button class="button" :class="{ double, triple, operation }" @click="onClick">
+  <button class="button" :class="{ double, triple, operation }" @click="() => onClick(label)">
     {{ label }}
   </button>
 </template>
